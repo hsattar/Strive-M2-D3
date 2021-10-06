@@ -6,3 +6,8 @@
 .welcome-summer-img {
     height: 200px;
 }
+
+.testimonial-img {
+    border-radius: 50%;
+    max-height: 50px;
+}
