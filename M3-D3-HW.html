@@ -101,7 +101,7 @@ Ex 16) Create a function to delete all "cards" from the page
 
 <div class="jumbotron">
     <h1 class="display-4">Around The World!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p id="jumbotron-subheading" class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium itaque quae, similique odio maiores perspiciatis eos tenetur veritatis accusamus eaque, harum sunt magni culpa distinctio provident suscipit vero. Expedita?</p>
 </div>
@@ -275,7 +275,7 @@ Ex 16) Create a function to delete all "cards" from the page
 
     <div class="carousel-item active">
         <div class="card mb-4">
-            <div class="card-body ">
+            <div class="card-body">
                 <img class="img-fluid testimonial-img" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80" alt="">
                 <h6 class="card-subtitle my-2 text-muted">Thomas Anderson</h6>
                 <h5 class="card-title">Great Holiday</h5>
@@ -343,8 +343,60 @@ Ex 16) Create a function to delete all "cards" from the page
 <footer class="text-center border-top mt-4 mb-3">
     <p class="mt-3">&copy; Around The World 2021</p>
     <p>We Are A Great Company</p>
-    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    <button type="button" class="btn btn-primary myb-3" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
 </footer>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">First Name</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Last Name</label>
+                        <input type="text" class="form-control" id="inputPassword4">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-8">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputZip">Post Code</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </div>
@@ -352,6 +404,7 @@ Ex 16) Create a function to delete all "cards" from the page
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 
 </body>
 
